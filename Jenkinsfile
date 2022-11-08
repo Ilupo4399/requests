@@ -9,12 +9,12 @@ pipeline{
         }
         stage("building ..."){
             steps{
-                sh 'python3 http_e.py'
+                sh 'python http_e.py'
             }
         }
         stage("testing ..."){
             steps{
-                sh 'pytest TestRest.py'
+                echo "========executing A========"
             }
         }
     }
