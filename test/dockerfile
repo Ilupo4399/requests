@@ -1,3 +1,5 @@
 
-FROM python3 AS builder
-CMD [ "echo" "hello from the other side" ] 
+FROM python
+WORKDIR /app
+COPY . .
+RUN ["python","holder.py"] 
