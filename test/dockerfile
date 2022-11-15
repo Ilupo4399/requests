@@ -1,0 +1,3 @@
+
+FROM python3 AS builder
+CMD [ "echo" "hello from the other side" ] 
